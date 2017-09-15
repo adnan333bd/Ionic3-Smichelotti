@@ -8,12 +8,14 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { MyTeamsPage } from '../pages/my-teams/my-teams';
+import { TournamentsPage } from '../pages/tournaments/tournaments';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage
+    MyTeamsPage,
+    TournamentsPage
   ],
   imports: [
     BrowserModule,
@@ -22,8 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage
+    MyTeamsPage,
+    TournamentsPage
   ],
   providers: [
     StatusBar,
