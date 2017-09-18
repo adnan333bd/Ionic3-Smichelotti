@@ -53,7 +53,7 @@ export class TeamsPage {
   updateTeams(){
     let queryTextLower = this.queryText.toLowerCase();
     let filteredTeams = [];
-    _.forEach(this.allTeamDivisions, td => {
+    _.forEach(this.allTeamDivisions, (td: any) => {
       let teams = _.filter(td.divisionTeams, t => (<any>t).name.toLowerCase().includes(queryTextLower));
       if (teams.length) {
         filteredTeams.push({ divisionName: td.divisionName, divisionTeams: teams });
